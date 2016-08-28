@@ -3,11 +3,11 @@ const ReactDOM = require('react-dom');
 const Button = require('./Button');
 
 class App extends React.Component {
-  render() {
+  render(): ReactElement<any> {
     return (
       <div>
-      <p> Hello mapU! I am Danqi! </p>
-      <Button />
+        <p> Hello mapU! I am Danqi! </p>
+        <Button ref="gmap"/>
       </div>
     );
   }
